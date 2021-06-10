@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Baskervville&display=swap');
+
+.hero-image {
+  background: rgb(0,0,0);
+  background-image: url(/assets/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+  background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(117,117,117,0) 23%, rgba(255,255,255,0) 79%, rgba(22,22,22,1) 100%), url(/assets/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+  height: 44rem;
+  background-size: contain;
+}
+
+.barrio {
+  font-family: 'Barrio', cursive;
+}
+
+.baskervville {
+  font-family: 'Baskervville', serif;
+}

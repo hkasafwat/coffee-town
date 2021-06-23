@@ -9,100 +9,279 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Coffee Town</title>
   </head>
   <body>
-    <nav class="flex p-4">
-      <span class="p-4 mr-auto"
-        ><img src="/assets/coffee-town-logo.png" alt="" srcset="" class="w-40"
-      /></span>
-      <span class="p-4">About Us</span>
-      <span class="p-4">The Cafe</span>
-      <span class="p-4">Contact Us</span>
-    </nav>
     <div class="hero-image">
-      <div class="text-white barrio flex justify-center pt-10 pb-36 text-8xl">
+      <nav class="flex p-4 max-w-screen-xl m-auto">
+        <div class="flex flex-col mr-auto">
+          <span class="pt-4 pl-4 barrio text-4xl text-white"> Coffee </span>
+          <span class="pb-4 pl-4 barrio text-4xl text-white"> Town</span>
+        </div>
+        <div class="barrio self-center text-2xl text-white">
+          <a href="#" class="p-4">About Us</a>
+          <a href="#" class="p-4">Menu</a>
+          <a href="#" class="p-4">Cafe</a>
+          <a href="#" class="p-4">Blog</a>
+          <a href="#" class="p-4">Contact Us</a>
+        </div>
+      </nav>
+      <div class="text-white barrio flex text-center justify-center pt-10 pb-40 text-5xl sm:text-8xl">
         Welcome to town
       </div>
-      <div class="text-white barrio flex justify-center pt-10 pb-4 text-2xl">
-        Coffe Town Cafe & Roasters
+      <div class=" text-center p-6 m-auto sm:w-max rounded bg-opacity-50 bg-black">
+        <div class="text-white barrio flex justify-center pb-4 text-2xl">
+          Coffee Town Cafe & Roasters
+        </div>
+        <a
+          href=""
+          class="
+            bg-white
+            w-32
+            m-auto
+            text-center
+            py-5
+            text-black
+            barrio
+            flex
+            justify-center
+            text-2xl
+          "
+          >Visit Us</a
+        >
       </div>
-      <a
-        href=""
+    </div>
+
+    <div class="flex flex-col items-center max-w-screen-lg m-auto">
+      <div
         class="
-          bg-white
-          w-32
-          m-auto
+          pt-12
+          max-w-screen-xl
           text-center
-          py-5
-          text-black
-          barrio
-          flex
+          flex flex-col
           justify-center
-          text-2xl
         "
-        >Visit Us</a
       >
-    </div>
-
-    <div class="px-32 pt-12 text-center flex flex-col justify-center">
-      <div class="barrio text-5xl pt-8 pb-10">About us</div>
-      <div class="baskervville text-xl">
-        Born in London in 2005, Coffe Town Cafe is built on a foundation of
-        passionate people, defining itself as a new-generation coffee shop,
-        all-day café and social space. Our stripped back use of raw woods,
-        metals and concrete in our cafes is a reflection of the stripped back,
-        soulful food we love to serve. Recognised as one of the top brunch
-        destinations in the country by both the Sunday Times and the Observer,
-        we're continuing to push boundaries, experimenting with new menu
-        concepts and, since 2016, roasting our own speciality coffee.<br />
-        We look forward to you coming to visit us.
-      </div>
-    </div>
-
-    <div class="px-32 pt-24 text-center flex flex-col justify-center">
-      <div class="barrio text-5xl pt-8 pb-10">The Cafe</div>
-      <div class="flex">
-        <img
-          src="/assets/rr-abrot-pNIgH0y3upM-unsplash.jpg"
-          alt=""
-          class="h-80"
-        />
-        <div class="baskervville text-xl pl-5">
-          The cafe’s large size and full window front allowing lots of natural
-          light provides a calm and comforting experience for everyone.
-          <br />
-          The cafe is located at 221B Baker St, London NW1 6XE.
+        <div class="barrio text-5xl pt-8 pb-10">About us</div>
+        <div class="baskervville text-xl">
+          Born in London in 2005, Coffe Town Cafe is built on a foundation of
+          passionate people, defining itself as a new-generation coffee shop,
+          all-day café and social space. Our stripped back use of raw woods,
+          metals and concrete in our cafes is a reflection of the stripped back,
+          soulful food we love to serve. Recognised as one of the top brunch
+          destinations in the country by both the Sunday Times and the Observer,
+          we're continuing to push boundaries, experimenting with new menu
+          concepts and, since 2016, roasting our own speciality coffee.<br />
+          We look forward to you coming to visit us.
         </div>
       </div>
-    </div>
 
-    <div class="px-32 pt-24 text-center flex flex-col justify-center">
-      <div class="barrio text-5xl pt-8 pb-10">Contact Us</div>
-      <div class="flex flex-col">
-        <div class="baskervville text-xl">
-          Any questions regarding Cafes and Table Bookings email us directly at
-          : hello@coffeetown.co.uk
-        </div>
-        <br>
-        <div class="baskervville text-xl">
-          If you're looking for help with an Online Order or Coffee Wholesale
-          please email us directly at coffee@yorkscafe.co.uk or use the below
-          form and one of the team members will be in touch:
-        </div>
-        <div class="flex flex-col space-y-4 mt-8 px-24">
-          <div class="flex justify-between">
-            <input class="py-4 pl-4 pr-32 border" type="text" placeholder="Name">
-            <input class="py-4 pl-4 pr-32 border" type="text" placeholder="Email">
+      <div
+        class="
+          pt-24
+          max-w-screen-xl
+          text-center
+          flex flex-col
+          justify-center
+        "
+      >
+        <div class="barrio text-5xl pt-8 pb-10">Menu</div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-gray-500">
+          <div>
+            <p class="mb-4 font-bold underline">ESPRESSO</p>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Espresso</p>
+              <p>Coffee Town Roasting's own espresso</p>
+              <p>£1.15 2oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Cappuccino</p>
+              <p>Espresso with foamed milk</p>
+              <p>£2.15 6oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Cortado</p>
+              <p>Espresso with foamed milk</p>
+              <p>£1.81 2oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Macchiato</p>
+              <p>Espresso with foamed milk</p>
+              <p>£1.15 2oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Americano</p>
+              <p>Espresso and hot water</p>
+              <p>£1.15 8oz / £1.19 12oz / £1.24 16oz / £1.29 20oz</p>
+            </div>
           </div>
-          <input class="p-4 border" type="text" name="" id="" placeholder="Phone Number (Optional)">
-          <input class="p-4 border pb-40" type="text" name="" id="" placeholder="Your Message">
+          <div class="w-72 m-auto">
+            <p class="mb-4 font-bold underline">CHOCOLATE & TEA</p>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Iced Tea</p>
+              <p>Black, Fiji Green, or Cranberry Hibiscus</p>
+              <p>£4.29 8oz / £4.53 12oz / £4.77 16oz / £5.01 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Chai Latte</p>
+              <p>Chai with steamed milk</p>
+              <p>£4.05 8oz / £4.29 12oz / £4.77 16oz / £5.01 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Golden Milk</p>
+              <p>Turmeric, ginger, and warming spices steamed together with oat milk and a touch of vanilla</p>
+              <p>£4.91 8oz / £5.15 12oz / £5.29 16oz / £5.63 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Hot Chocolate</p>
+              <p>Cocoa with steamed milk</p>
+              <p>£3.34 8oz / £3.58 12oz / £3.81 16oz / £4.05 20 oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Italian Soda</p>
+              <p>Carbonated water with juice syrup</p>
+              <p>£3.81 12oz / £4.29 16oz / £4.77 20oz</p>
+            </div>
+          </div>
+          <div class="lg:col-start-1 lg:col-span-2">
+            <p class="mb-4 font-bold underline">SMOOTHIES</p>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Berry Antioxidant</p>
+              <p>Strawberries, raspberries, blueberries, chia seeds, apple juice</p>
+              <p>£6.20 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Clean Green</p>
+              <p>Kale, spinach, banana, pineapple, spirulina, chia seeds, oat milk</p>
+              <p>£6.20 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Tropical Energy</p>
+              <p>Banana, mango, pineapple, coconut, coconut milk</p>
+              <p>£6.20 20oz</p>
+            </div>
+            <div class="mb-8 space-y-2">
+              <p class="font-bold">Strawberry Banana</p>
+              <p>Strawberry, banana, oat milk</p>
+              <p>£6.20 20oz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="
+          pt-24
+          max-w-screen-xl
+          text-center
+          flex flex-col
+          justify-center
+        "
+      >
+        <div class="barrio text-5xl pt-8 pb-10">The Cafe</div>
+        <div class="flex flex-col sm:flex-row">
+          <img
+            src="/assets/rr-abrot-pNIgH0y3upM-unsplash.jpg"
+            alt=""
+            class="h-80"
+          />
+          <div class="baskervville text-xl pl-5">
+            The cafe’s large size and full window front allowing lots of natural
+            light provides a calm and comforting experience for everyone.
+            <br />
+            The cafe is located at 221B Baker St, London NW1 6XE.
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-screen-xl flex flex-col sm:flex-row">
+        <div class="flex flex-col">
+          <div>Make a booking</div>
+          <br />
+          <form action="">
+            <label for="booking">Date:</label>
+            <input type="date" id="booking" name="booking" />
+            <input type="submit" />
+          </form>
+        </div>
+
+        <div class="flex flex-col">
+          <div>Opening Times</div>
+          <br />
+          <div>Monday-Friday: 08.00 - 22.30</div>
+          <div>Saturday: 10.00 - 22.30</div>
+          <div>Sunday: 10.00 - 16.00</div>
+        </div>
+
+        <div class="flex flex-col">
+          <div>Contact</div>
+          <br />
+          <form action="">
+            <label for="booking">Date:</label>
+            <input type="date" id="booking" name="booking" />
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="
+          pt-24
+          max-w-screen-xl
+          text-center
+          flex flex-col
+          justify-center
+        "
+      >
+        <div class="barrio text-5xl pt-8 pb-10">Contact Us</div>
+        <div class="flex flex-col">
+          <p class="baskervville text-xl">
+            Any questions regarding Cafes and Table Bookings email us directly
+            at : hello@coffeetown.co.uk
+          </p>
+          <br />
+          <p class="baskervville text-xl">
+            If you're looking for help with an Online Order or Coffee Wholesale
+            please email us directly at coffee@coffeetown.co.uk or use the below
+            form and one of the team members will be in touch:
+          </p>
+          <div class="flex flex-col space-y-4 mt-8 m-4">
+            <div class="flex flex-col sm:flex-row justify-between">
+              <input
+                class="py-4 pl-4 border"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="py-4 pl-4  border"
+                type="text"
+                placeholder="Email"
+              />
+            </div>
+            <input
+              class="p-4 border"
+              type="text"
+              name=""
+              id=""
+              placeholder="Phone Number (Optional)"
+            />
+            <input
+              class="p-4 border pb-40"
+              type="text"
+              name=""
+              id=""
+              placeholder="Your Message"
+            />
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="h-24 bg-gray-700 mt-12">
-
+    <div class="mt-12 mx-auto">
+      <div class="flex flex-col mx-auto py-6 text-center">
+        <span class="barrio text-4xl text-black">Coffee</span>
+        <span class="barrio text-4xl text-black">Town<span>&copy;</span></span>
+      </div>
     </div>
   </body>
 </html>

@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Coffee Town</title>
-  </head>
-  <body>
-    <div class="hero-image">
-      <nav class="flex p-4 max-w-screen-xl m-auto">
-        <div class="flex flex-col mr-auto">
-          <span class="pt-4 pl-4 barrio text-4xl text-white"> Coffee </span>
-          <span class="pb-4 pl-4 barrio text-4xl text-white"> Town</span>
-        </div>
-        <div class="barrio self-center text-2xl text-white">
-          <a href="#" class="p-4">About Us</a>
-          <a href="#" class="p-4">Menu</a>
-          <a href="#" class="p-4">Cafe</a>
-          <a href="#" class="p-4">Blog</a>
-          <a href="#" class="p-4">Contact Us</a>
-        </div>
-      </nav>
-      <div class="text-white barrio flex text-center justify-center pt-10 pb-40 text-5xl sm:text-8xl">
-        Welcome to town
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Coffee Town</title>
+</head>
+
+<body>
+  <div class="hero-image">
+    <nav class="flex p-4 max-w-screen-xl m-auto">
+      <div class="flex flex-col mr-auto">
+        <span class="pt-4 pl-4 barrio text-2xl lg:text-4xl text-white"> Coffee </span>
+        <span class="pb-4 pl-4 barrio text-2xl lg:text-4xl text-white"> Town</span>
       </div>
-      <div class=" text-center p-6 m-auto sm:w-max rounded bg-opacity-50 bg-black">
-        <div class="text-white barrio flex justify-center pb-4 text-2xl">
-          Coffee Town Cafe & Roasters
-        </div>
-        <a
-          href=""
-          class="
+      <div class="barrio self-center md:text-xl lg:text-2xl text-white hidden md:block">
+        <a href="#about" class="p-4">About Us</a>
+        <a href="#menu" class="p-4">Menu</a>
+        <a href="#cafe" class="p-4">Cafe</a>
+        <a href="#booking" class="p-4">Booking</a>
+        <a href="#blog" class="p-4">Blog</a>
+        <a href="#contact" class="p-4">Contact Us</a>
+      </div>
+      <button class="menu-toggle md:hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+    </nav>
+    <div class="nav-dropdown-menu absolute bg-white text-center hide-menu w-full">
+      <div class="barrio self-center text-2xl text-black block md:hidden flex flex-col">
+        <a href="#about" class="p-4 border-b">About Us</a>
+        <a href="#menu" class="p-4 border-b">Menu</a>
+        <a href="#cafe" class="p-4 border-b">Cafe</a>
+        <a href="#booking" class="p-4 border-b">Booking</a>
+        <a href="#blog" class="p-4 border-b">Blog</a>
+        <a href="#contact" class="p-4 border-b">Contact Us</a>
+      </div>
+    </div>
+    <div class="text-white barrio flex text-center justify-center pt-10 pb-12 sm:pb-40 text-5xl sm:text-8xl">
+      Welcome to town
+    </div>
+    <div class=" text-center p-6 m-auto sm:w-max rounded bg-opacity-50 bg-black">
+      <div class="text-white barrio flex justify-center pb-4 text-2xl">
+        Coffee Town Cafe & Roasters
+      </div>
+      <a href="#cafe" class="
             bg-white
             w-32
             m-auto
@@ -46,233 +63,236 @@
             flex
             justify-center
             text-2xl
-          "
-          >Visit Us</a
-        >
-      </div>
+          ">Visit Us</a>
     </div>
+  </div>
 
-    <div class="flex flex-col items-center max-w-screen-lg m-auto">
-      <div
-        class="
+  <div class="flex flex-col items-center max-w-screen-lg m-auto">
+    <div class="
           pt-12
           max-w-screen-xl
           text-center
           flex flex-col
           justify-center
-        "
-      >
-        <div class="barrio text-5xl pt-8 pb-10">About us</div>
-        <div class="baskervville text-xl">
-          Born in London in 2005, Coffe Town Cafe is built on a foundation of
-          passionate people, defining itself as a new-generation coffee shop,
-          all-day café and social space. Our stripped back use of raw woods,
-          metals and concrete in our cafes is a reflection of the stripped back,
-          soulful food we love to serve. Recognised as one of the top brunch
-          destinations in the country by both the Sunday Times and the Observer,
-          we're continuing to push boundaries, experimenting with new menu
-          concepts and, since 2016, roasting our own speciality coffee.<br />
-          We look forward to you coming to visit us.
-        </div>
+        ">
+      <div id="about" class="barrio text-3xl sm:text-5xl pt-8 pb-3 sm:pb-10">About us</div>
+      <div class="baskervville text-lg sm:text-xl px-2">
+        Born in London in 2005, Coffe Town Cafe is built on a foundation of
+        passionate people, defining itself as a new-generation coffee shop,
+        all-day café and social space. Our stripped back use of raw woods,
+        metals and concrete in our cafes is a reflection of the stripped back,
+        soulful food we love to serve. Recognised as one of the top brunch
+        destinations in the country by both the Sunday Times and the Observer,
+        we're continuing to push boundaries, experimenting with new menu
+        concepts and, since 2016, roasting our own speciality coffee.<br />
+        We look forward to you coming to visit us.
       </div>
+    </div>
 
-      <div
-        class="
-          pt-24
+    <div class="
           max-w-screen-xl
           text-center
           flex flex-col
           justify-center
-        "
-      >
-        <div class="barrio text-5xl pt-8 pb-10">Menu</div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-gray-500">
-          <div>
-            <p class="mb-4 font-bold underline">ESPRESSO</p>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Espresso</p>
-              <p>Coffee Town Roasting's own espresso</p>
-              <p>£1.15 2oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Cappuccino</p>
-              <p>Espresso with foamed milk</p>
-              <p>£2.15 6oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Cortado</p>
-              <p>Espresso with foamed milk</p>
-              <p>£1.81 2oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Macchiato</p>
-              <p>Espresso with foamed milk</p>
-              <p>£1.15 2oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Americano</p>
-              <p>Espresso and hot water</p>
-              <p>£1.15 8oz / £1.19 12oz / £1.24 16oz / £1.29 20oz</p>
-            </div>
+          w-full
+          p-2 
+        ">
+      <div id="menu" class="barrio text-3xl sm:text-5xl pb-4 pt-10 mt-8 sm:pb-10">Menu</div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 sm:gap-4 text-gray-500">
+        <button class=" font-bold  sm:hidden border py-4 button-1 shadow-sm">ESPRESSO <i
+            class="ml-2 fas fa-chevron-down"></i></button>
+        <div class=" sm:block hide-menu menu-1 mt-4 sm:mt-0">
+          <p class="mb-4 font-bold underline hidden sm:block">ESPRESSO</p>
+          <div class="mb-8 space-y-2 ">
+            <p class="font-bold">Espresso</p>
+            <p>Coffee Town Roasting's own espresso</p>
+            <p>£1.15 2oz</p>
           </div>
-          <div class="w-72 m-auto">
-            <p class="mb-4 font-bold underline">CHOCOLATE & TEA</p>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Iced Tea</p>
-              <p>Black, Fiji Green, or Cranberry Hibiscus</p>
-              <p>£4.29 8oz / £4.53 12oz / £4.77 16oz / £5.01 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Chai Latte</p>
-              <p>Chai with steamed milk</p>
-              <p>£4.05 8oz / £4.29 12oz / £4.77 16oz / £5.01 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Golden Milk</p>
-              <p>Turmeric, ginger, and warming spices steamed together with oat milk and a touch of vanilla</p>
-              <p>£4.91 8oz / £5.15 12oz / £5.29 16oz / £5.63 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Hot Chocolate</p>
-              <p>Cocoa with steamed milk</p>
-              <p>£3.34 8oz / £3.58 12oz / £3.81 16oz / £4.05 20 oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Italian Soda</p>
-              <p>Carbonated water with juice syrup</p>
-              <p>£3.81 12oz / £4.29 16oz / £4.77 20oz</p>
-            </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Cappuccino</p>
+            <p>Espresso with foamed milk</p>
+            <p>£2.15 6oz</p>
           </div>
-          <div class="lg:col-start-1 lg:col-span-2">
-            <p class="mb-4 font-bold underline">SMOOTHIES</p>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Berry Antioxidant</p>
-              <p>Strawberries, raspberries, blueberries, chia seeds, apple juice</p>
-              <p>£6.20 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Clean Green</p>
-              <p>Kale, spinach, banana, pineapple, spirulina, chia seeds, oat milk</p>
-              <p>£6.20 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Tropical Energy</p>
-              <p>Banana, mango, pineapple, coconut, coconut milk</p>
-              <p>£6.20 20oz</p>
-            </div>
-            <div class="mb-8 space-y-2">
-              <p class="font-bold">Strawberry Banana</p>
-              <p>Strawberry, banana, oat milk</p>
-              <p>£6.20 20oz</p>
-            </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Cortado</p>
+            <p>Espresso with foamed milk</p>
+            <p>£1.81 2oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Macchiato</p>
+            <p>Espresso with foamed milk</p>
+            <p>£1.15 2oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Americano</p>
+            <p>Espresso and hot water</p>
+            <p>£1.15 8oz / £1.19 12oz / £1.24 16oz / £1.29 20oz</p>
+          </div>
+        </div>
+        <button class="font-bold  sm:hidden border py-4 button-2 shadow-sm">CHOCOLATE & TEA <i
+            class="ml-2 fas fa-chevron-down"></i></button>
+        <div class="w-72 m-auto  sm:block hide-menu menu-2 mt-4 sm:mt-0">
+          <p class="mb-4 font-bold underline hidden sm:block">CHOCOLATE & TEA</p>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Iced Tea</p>
+            <p>Black, Fiji Green, or Cranberry Hibiscus</p>
+            <p>£4.29 8oz / £4.53 12oz / £4.77 16oz / £5.01 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Chai Latte</p>
+            <p>Chai with steamed milk</p>
+            <p>£4.05 8oz / £4.29 12oz / £4.77 16oz / £5.01 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Golden Milk</p>
+            <p>Turmeric, ginger, and warming spices steamed together with oat milk and a touch of vanilla</p>
+            <p>£4.91 8oz / £5.15 12oz / £5.29 16oz / £5.63 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Hot Chocolate</p>
+            <p>Cocoa with steamed milk</p>
+            <p>£3.34 8oz / £3.58 12oz / £3.81 16oz / £4.05 20 oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Italian Soda</p>
+            <p>Carbonated water with juice syrup</p>
+            <p>£3.81 12oz / £4.29 16oz / £4.77 20oz</p>
+          </div>
+        </div>
+        <button class="w-full font-bold  sm:hidden border py-4 button-3 shadow-sm">SMOOTHIES <i
+            class="ml-2 fas fa-chevron-down"></i></button>
+        <div class="lg:col-start-1 lg:col-span-2 xl:col-span-1  sm:block hide-menu menu-3 mt-4 sm:mt-0">
+          <p class="mb-4 font-bold underline hidden sm:block">SMOOTHIES</p>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Berry Antioxidant</p>
+            <p>Strawberries, raspberries, blueberries, chia seeds, apple juice</p>
+            <p>£6.20 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Clean Green</p>
+            <p>Kale, spinach, banana, pineapple, spirulina, chia seeds, oat milk</p>
+            <p>£6.20 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Tropical Energy</p>
+            <p>Banana, mango, pineapple, coconut, coconut milk</p>
+            <p>£6.20 20oz</p>
+          </div>
+          <div class="mb-8 space-y-2">
+            <p class="font-bold">Strawberry Banana</p>
+            <p>Strawberry, banana, oat milk</p>
+            <p>£6.20 20oz</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div
-        class="
-          pt-24
-          max-w-screen-xl
-          text-center
-          flex flex-col
-          justify-center
-        "
-      >
-        <div class="barrio text-5xl pt-8 pb-10">The Cafe</div>
-        <div class="flex flex-col sm:flex-row">
-          <img
-            src="/assets/rr-abrot-pNIgH0y3upM-unsplash.jpg"
-            alt=""
-            class="h-80"
-          />
-          <div class="baskervville text-xl pl-5">
-            The cafe’s large size and full window front allowing lots of natural
-            light provides a calm and comforting experience for everyone.
-            <br />
-            The cafe is located at 221B Baker St, London NW1 6XE.
-          </div>
+    <div id="cafe" class="barrio text-3xl sm:text-5xl pt-8 mt-8 pb-3 sm:pb-10">Cafe</div>
+    <div class="flex flex-col sm:flex-row px-2">
+      <img src="/assets/cafe.jpg" alt="" class=" sm:w-1/2 md:w-96 m-auto">
+      <p class="baskervville text-lg sm:text-xl px-2 mt-3 text-center m-auto  md:w-1/2 ">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nunc sed tempor risus
+        laoreet nec orci vitae,
+        <br>
+        <br>
+        Come Join us
+        <br>
+        We are located at
+        <br>
+        <br>
+        <span class="text-2xl font-bold">58 Guild Street, EC1P 1RP, London</span>
+      </p>
+    </div>
+
+    <div id="booking" class="barrio text-3xl sm:text-5xl pt-8 mt-10 pb-3 sm:pb-10">Booking</div>
+    <div
+      class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 m-auto p-2 space-y-4 sm:space-y-0 md:space-x-4 text-center">
+      <div class="flex flex-col p-4 border rounded shadow-sm">
+        <div class="font-bold text-xl underline baskervville">Make a booking</div>
+        <br />
+        <div>
+          <input type="date" id="booking" name="booking" class="px-6 py-2 bg-gray-100 rounded" />
         </div>
+        <button class="p-2 mt-5 bg-gray-300 rounded w-1/2 mx-auto">Submit</button>
       </div>
 
-      <div class="max-w-screen-xl flex flex-col sm:flex-row">
-        <div class="flex flex-col">
-          <div>Make a booking</div>
-          <br />
-          <form action="">
-            <label for="booking">Date:</label>
-            <input type="date" id="booking" name="booking" />
-            <input type="submit" />
-          </form>
-        </div>
-
-        <div class="flex flex-col">
-          <div>Opening Times</div>
-          <br />
+      <div class="flex flex-col p-4 border rounded shadow-sm">
+        <div class="font-bold underline text-xl baskervville">Opening Times</div>
+        <br />
+        <div class="text-lg space-y-2">
           <div>Monday-Friday: 08.00 - 22.30</div>
           <div>Saturday: 10.00 - 22.30</div>
           <div>Sunday: 10.00 - 16.00</div>
         </div>
-
-        <div class="flex flex-col">
-          <div>Contact</div>
-          <br />
-          <form action="">
-            <label for="booking">Date:</label>
-            <input type="date" id="booking" name="booking" />
-            <input type="submit" />
-          </form>
-        </div>
       </div>
 
-      <div
-        class="
-          pt-24
-          max-w-screen-xl
+      <div class="flex flex-col p-4 border rounded shadow-sm sm:col-start-1 sm:col-span-2 md:col-span-1 sm:w-1/2 md:w-auto m-auto">
+        <div class="font-bold underline text-xl baskervville">Contact</div>
+        <br />
+        <p class="baskervville font-bold text-lg">
+          Any questions email us directly
+          at: hello@coffeetown.co.uk
+          or call us at 0700000000
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="blog" class="barrio text-3xl sm:text-5xl pt-8 mt-10 pb-3 sm:pb-10">Blog</div>
+    <div class="max-w-screen-xl baskervville grid grid-cols-1 sm:grid-cols-3 m-auto p-2 space-y-4 sm:space-y-0 sm:space-x-4">
+      <button class="flex flex-col border rounded shadow-sm hover:shadow-md">
+        <div class="coffee-handle"></div>
+        <p class="font-bold text-xl py-2 px-3">How to make a good coffee at home</p>
+        <p class="text-lg px-3 pt-2 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tempor risus
+          laoreet nec orci vitae,
+          iaculis tincidunt nulla... </p>
+      </button>
+
+      <button class="flex flex-col border rounded shadow-sm hover:shadow-md">
+        <div class="coffee-bag"></div>
+        <p class="font-bold text-xl py-2 px-3">Comparing beans from different countries</p>
+        <p class="text-lg px-3 pt-2 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tempor risus
+          laoreet nec orci vitae,
+          iaculis tincidunt nulla... </p>
+      </button>
+
+      <button class="flex flex-col border rounded shadow-sm hover:shadow-md">
+        <div class="coffee-beans"></div>
+        <p class="font-bold text-xl py-2 px-3">Spilling the beans.. differences between beans</p>
+        <p class="text-lg px-3 pt-2 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tempor risus
+          laoreet nec orci vitae,
+          iaculis tincidunt nulla... </p>
+      </button>
+    </div>
+
+    
+    <div class="
+          max-w-screen-lg
           text-center
           flex flex-col
           justify-center
-        "
-      >
-        <div class="barrio text-5xl pt-8 pb-10">Contact Us</div>
-        <div class="flex flex-col">
-          <p class="baskervville text-xl">
-            Any questions regarding Cafes and Table Bookings email us directly
-            at : hello@coffeetown.co.uk
-          </p>
-          <br />
-          <p class="baskervville text-xl">
-            If you're looking for help with an Online Order or Coffee Wholesale
-            please email us directly at coffee@coffeetown.co.uk or use the below
-            form and one of the team members will be in touch:
-          </p>
-          <div class="flex flex-col space-y-4 mt-8 m-4">
-            <div class="flex flex-col sm:flex-row justify-between">
-              <input
-                class="py-4 pl-4 border"
-                type="text"
-                placeholder="Name"
-              />
-              <input
-                class="py-4 pl-4  border"
-                type="text"
-                placeholder="Email"
-              />
-            </div>
-            <input
-              class="p-4 border"
-              type="text"
-              name=""
-              id=""
-              placeholder="Phone Number (Optional)"
-            />
-            <input
-              class="p-4 border pb-40"
-              type="text"
-              name=""
-              id=""
-              placeholder="Your Message"
-            />
+        ">
+      <div id="contact" class="barrio text-3xl sm:text-5xl pb-4 pt-8 mt-8 sm:pb-10">Contact Us</div>
+      <div class="flex flex-col">
+        <p class="baskervville text-xl p-2">
+          Any questions regarding Cafes and Table Bookings email us directly
+          at : hello@coffeetown.co.uk
+        </p>
+        <br />
+        <p class="baskervville text-xl p-2">
+          If you're looking for help with an Online Order or Coffee Wholesale
+          please email us directly at coffee@coffeetown.co.uk or use the below
+          form and one of the team members will be in touch:
+        </p>
+        <div class="flex flex-col space-y-4 mt-8 m-4">
+          <div class="flex flex-col sm:flex-row justify-between">
+            <input class="py-4 pl-4 border sm:mr-1 w-full" type="text" placeholder="Name" />
+            <input class="py-4 pl-4  border sm:ml-1 w-full" type="text" placeholder="Email" />
           </div>
+          <input class="p-4 border" type="text" name="" id="" placeholder="Phone Number (Optional)" />
+          <input class="p-4 border pb-40" type="text" name="" id="" placeholder="Your Message" />
+          <button class="text-white bg-gray-700 hover:bg-gray-500 py-4 rounded w-56 m-auto">Submit</button>
         </div>
       </div>
     </div>
@@ -283,5 +303,8 @@
         <span class="barrio text-4xl text-black">Town<span>&copy;</span></span>
       </div>
     </div>
-  </body>
+</body>
+
+<script src="/main.js"></script>
+
 </html>

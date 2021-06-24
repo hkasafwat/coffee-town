@@ -8,10 +8,34 @@
   background-size: cover;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
   .hero-image {
-    height: 45rem;
+    height: 35rem;
   }
+}
+
+.coffee-handle {
+  background-image: url(/assets/coffee-handle.jpg);
+  background-size: cover;
+  height: 12rem;
+  width: 100%;
+  background-position-y:  -2rem;
+}
+
+.coffee-bag {
+  background-image: url(/assets/coffee-bag.png);
+  background-size: cover;
+  height: 12rem;
+  width: 100%;
+  background-position-y:  -2rem;
+}
+
+.coffee-beans {
+  background-image: url(/assets/beans.jpg);
+  background-size: cover;
+  height: 12rem;
+  width: 100%;
+  background-position-y:  -2rem;
 }
 
 .barrio {
@@ -20,4 +44,31 @@
 
 .baskervville {
   font-family: 'Baskervville', serif;
+}
+
+.menu-toggle div {
+  background-color: white;
+  width: 40px;
+  height: 6px;
+  position: relative;
+  margin-top: 5px;
+  border-radius: 1px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  
+.hide-menu {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+  overflow: hidden;
+}
+.show-menu {
+  /* max-height: 500px; */
+  opacity: 1;
+  transition: max-height 0.4s ease-in, opacity 0.5s ease-in;
+}
 }

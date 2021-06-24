@@ -2,7 +2,7 @@
 
 .hero-image {
   background: rgb(0,0,0);
-  background-image: url(/assets/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+  background-image: url(assets/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
   background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(117,117,117,0) 23%, rgba(255,255,255,0) 79%, rgba(22,22,22,1) 100%), url(/assets/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
   height: 55rem;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .coffee-handle {
-  background-image: url(/assets/coffee-handle.jpg);
+  background-image: url(assets/coffee-handle.jpg);
   background-size: cover;
   height: 12rem;
   width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .coffee-bag {
-  background-image: url(/assets/coffee-bag.png);
+  background-image: url(assets/coffee-bag.png);
   background-size: cover;
   height: 12rem;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .coffee-beans {
-  background-image: url(/assets/beans.jpg);
+  background-image: url(assets/beans.jpg);
   background-size: cover;
   height: 12rem;
   width: 100%;
